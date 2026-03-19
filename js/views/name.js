@@ -29,12 +29,6 @@ export function renderNameInput() {
                         <span>✓</span> CONFIRMAR
                     </button>
                 </form>
-                
-                <div class="back-link">
-                    <button id="btn-back" class="btn btn-ghost">
-                        ← Volver al inicio
-                    </button>
-                </div>
             </div>
             
             <div class="mario-ground"></div>
@@ -43,7 +37,6 @@ export function renderNameInput() {
 
     const form = document.getElementById('name-form');
     const input = document.getElementById('player-name');
-    const btnBack = document.getElementById('btn-back');
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -63,11 +56,6 @@ export function renderNameInput() {
         };
         setUser(user);
         
-        const { navigate } = await import('../router.js');
-        navigate('home');
-    });
-
-    btnBack.addEventListener('click', async () => {
         const { navigate } = await import('../router.js');
         navigate('home');
     });

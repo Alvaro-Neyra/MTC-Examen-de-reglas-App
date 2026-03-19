@@ -17,23 +17,6 @@
 
 ---
 
-## Tabla de Contenidos
-
-- [Acerca del Proyecto](#acerca-del-proyecto)
-- [Características](#caracteristicas)
-- [Modos de Examen](#modos-de-examen)
-- [Capturas de Pantalla](#capturas-de-pantalla)
-- [Tecnologías Utilizadas](#tecnologias-utilizadas)
-- [Estructura del Proyecto](#estructura-del-proyecto)
-- [Cómo Usar](#como-usar)
-- [Criterios de Aprobación](#criterios-de-aprobacion)
-- [Instalación](#instalacion)
-- [SEO y Redes Sociales](#seo-y-redes-sociales)
-- [Licencia](#licencia)
-- [Autor](#autor)
-
----
-
 ## Acerca del Proyecto
 
 **MTC Exam** es una aplicación web interactiva diseñada para ayudarte a prepararte para el examen teórico de reglas de tránsito del Ministerio de Transportes y Comunicaciones (MTC) del Perú.

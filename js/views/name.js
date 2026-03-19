@@ -64,7 +64,7 @@ export function renderNameInput() {
         setUser(user);
         
         const { navigate } = await import('../router.js');
-        navigate('intro');
+        navigate('home');
     });
 
     btnBack.addEventListener('click', async () => {

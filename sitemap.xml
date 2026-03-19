@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Página Principal - Menú -->
+    <url>
+        <loc>https://mtc-exam-app.pages.dev/</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://mtc-exam-app.pages.dev/"/>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://mtc-exam-app.pages.dev/assets/menu-start.png</image:loc>
+            <image:title>Menú principal - Simulador Examen MTC Perú</image:caption>Simulador Examen MTC - Elige entre Modo Práctica o Simulador MTC</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Modo Práctica - Intro -->
+    <url>
+        <loc>https://mtc-exam-app.pages.dev/#intro</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://mtc-exam-app.pages.dev/#intro"/>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://mtc-exam-app.pages.dev/assets/practica-exam.png</image:loc>
+            <image:title>Modo Práctica - 200 Preguntas sin Límite de Tiempo</image:caption>Modo Práctica con 200 preguntas de examen MTC</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Modo Práctica - Examen -->
+    <url>
+        <loc>https://mtc-exam-app.pages.dev/#exam</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://mtc-exam-app.pages.dev/#exam"/>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://mtc-exam-app.pages.dev/assets/practica-exam.png</image:loc>
+            <image:title>Examen de Práctica - 200 Preguntas</image:caption>Realizando examen de práctica MTC</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Simulador MTC - Intro -->
+    <url>
+        <loc>https://mtc-exam-app.pages.dev/#simulator-intro</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://mtc-exam-app.pages.dev/#simulator-intro"/>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://mtc-exam-app.pages.dev/assets/simulacion-exam.png</image:loc>
+            <image:title>Simulador MTC - 40 Preguntas, 40 Minutos</image:caption>Simulador MTC con tiempo límite como el examen real</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Simulador MTC - Examen -->
+    <url>
+        <loc>https://mtc-exam-app.pages.dev/#simulator</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://mtc-exam-app.pages.dev/#simulator"/>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://mtc-exam-app.pages.dev/assets/simulacion-exam.png</image:loc>
+            <image:title>Simulador MTC Activo - Con Timer</image:caption>Simulador MTC en tiempo real con countdown</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Historial de Intentos -->
+    <url>
+        <loc>https://mtc-exam-app.pages.dev/#attempts</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://mtc-exam-app.pages.dev/#attempts"/>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://mtc-exam-app.pages.dev/assets/attempts.png</image:loc>
+            <image:title>Historial de Intentos - Ver Exámenes Anteriores</image:caption>Historial completo de exámenes realizados</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Estadísticas -->
+    <url>
+        <loc>https://mtc-exam-app.pages.dev/#stats</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://mtc-exam-app.pages.dev/#stats"/>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+        <image:image>
+            <image:loc>https://mtc-exam-app.pages.dev/assets/stats.png</image:loc>
+            <image:title>Estadísticas - Gráficos de Progreso</image:caption>Estadísticas y gráficos de tu progreso en el examen MTC</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Modo Repaso -->
+    <url>
+        <loc>https://mtc-exam-app.pages.dev/#review</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://mtc-exam-app.pages.dev/#review"/>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://mtc-exam-app.pages.dev/assets/practica-exam.png</image:loc>
+            <image:title>Modo Repaso - Preguntas Falladas</image:caption>Repasa las preguntas que fallaste en exámenes anteriores</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Resultados (usando attempts como imagen representativa) -->
+    <url>
+        <loc>https://mtc-exam-app.pages.dev/#results</loc>
+        <xhtml:link rel="alternate" hreflang="es" href="https://mtc-exam-app.pages.dev/#results"/>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://mtc-exam-app.pages.dev/assets/stats.png</image:loc>
+            <image:title>Resultados del Examen - Revisa tu Rendimiento</image:caption>Revisa los resultados y respuestas de tu examen</image:caption>
+        </image:image>
+    </url>
+    
+</urlset>

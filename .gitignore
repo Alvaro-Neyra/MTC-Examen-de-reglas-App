@@ -1,0 +1,43 @@
+# Windows Zone.Identifier files (Alternate Data Streams)
+*:Zone.Identifier
+*Zone.Identifier
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node modules (if any)
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
+
+# PDF files (if any)
+*.pdf

@@ -17,24 +17,24 @@
 
 ---
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
 - [Acerca del Proyecto](#acerca-del-proyecto)
-- [Características](#características)
+- [Características](#caracteristicas)
 - [Modos de Examen](#modos-de-examen)
 - [Capturas de Pantalla](#capturas-de-pantalla)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Tecnologías Utilizadas](#tecnologias-utilizadas)
 - [Estructura del Proyecto](#estructura-del-proyecto)
-- [Cómo Usar](#cómo-usar)
-- [Criterios de Aprobación](#criterios-de-aprobación)
-- [Instalación](#instalación)
+- [Cómo Usar](#como-usar)
+- [Criterios de Aprobación](#criterios-de-aprobacion)
+- [Instalación](#instalacion)
 - [SEO y Redes Sociales](#seo-y-redes-sociales)
 - [Licencia](#licencia)
 - [Autor](#autor)
 
 ---
 
-## 🎯 Acerca del Proyecto
+## Acerca del Proyecto
 
 **MTC Exam** es una aplicación web interactiva diseñada para ayudarte a prepararte para el examen teórico de reglas de tránsito del Ministerio de Transportes y Comunicaciones (MTC) del Perú.
 
@@ -53,26 +53,26 @@ La aplicación simula fielmente las condiciones del examen real, incluyendo:
 
 ---
 
-## ✨ Características
+## Características
 
-### 🏠 Página Principal
+### Página Principal
 - Animación retro de autos en carretera
 - Selección clara entre Modo Práctica y Simulador MTC
 - Estética arcade de los 90s con efectos CRT y scanlines
 
-### 👤 Sistema de Usuarios
+### Sistema de Usuarios
 - Ingreso simple de nombre para comenzar
 - Datos guardados en localStorage
 - Persistencia entre sesiones del navegador
 
-### 📊 Modo Práctica (200 Preguntas)
+### Modo Práctica (200 Preguntas)
 - 200 preguntas aleatorias de la banca oficial
 - Sin límite de tiempo
 - Progreso guardado automáticamente
 - Navegación por preguntas respondidas
 - Revisión de respuestas al finalizar
 
-### 🏁 Simulador MTC (40 Preguntas)
+### Simulador MTC (40 Preguntas)
 - 40 preguntas aleatorias como el examen real
 - Timer de 40 minutos con cuenta regresiva
 - Auto-submit cuando el tiempo se agota
@@ -82,7 +82,7 @@ La aplicación simula fielmente las condiciones del examen real, incluyendo:
   - 🟨 < 5 minutos: Amarillo + pulso lento
   - 🟥 < 1 minuto: Rojo + pulso rápido
 
-### 📈 Sistema de Resultados
+### Sistema de Resultados
 - Indicador visual de aprobación (verde/rojo)
 - Score circle con porcentaje
 - Desglose de respuestas correctas/incorrectas
@@ -90,36 +90,36 @@ La aplicación simula fielmente las condiciones del examen real, incluyendo:
 - Revisión de cada respuesta con colores
 - Filtros: Todas / Correctas / Incorrectas
 
-### 📜 Historial de Intentos
+### Historial de Intentos
 - Lista de todos los exámenes realizados
 - Badges diferenciados: "PRÁCTICA" vs "SIMULADOR"
 - Barra de progreso visual
 - Estadísticas resumidas (total, promedio, mejor, aprobados)
 
-### 🔁 Modo Repaso
+### Modo Repaso
 - Practica solo las preguntas falladas
 - Acceso rápido desde historial de intentos
 - Progreso guardado automáticamente
 
-### 📉 Estadísticas
+### Estadísticas
 - Gráficos de barras con Chart.js
 - Top 10 preguntas con mayor tasa de acierto
 - Top 10 preguntas con menor tasa de acierto
 - Resumen general de progreso
 
-### 🪟 Sistema de Modales
+### Sistema de Modales
 - Alternativa moderna a `alert()` y `confirm()` nativos
 - Estilo retro consistente con la app
 - Animaciones suaves
 
-### 🔄 Transiciones y Animaciones
+### Transiciones y Animaciones
 - Transiciones de página suaves
 - Animación de entrada/salida de preguntas
 - Efectos de hover en botones y cards
 
 ---
 
-## 🎮 Modos de Examen
+## Modos de Examen
 
 ### Modo Práctica
 <p align="center">
@@ -149,7 +149,7 @@ La aplicación simula fielmente las condiciones del examen real, incluyendo:
 
 ---
 
-## 📸 Capturas de Pantalla
+## Capturas de Pantalla
 
 ### Menú Principal
 <p align="center">
@@ -168,7 +168,7 @@ La aplicación simula fielmente las condiciones del examen real, incluyendo:
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 | Tecnología | Descripción |
 |-----------|-------------|
@@ -192,7 +192,7 @@ La aplicación simula fielmente las condiciones del examen real, incluyendo:
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 mtc-rules-exam-app/
@@ -248,7 +248,7 @@ mtc-rules-exam-app/
 
 ---
 
-## 🚀 Cómo Usar
+## Cómo Usar
 
 ### 1. Ingresa tu Nombre
 Al abrir la aplicación, ingresa tu nombre para comenzar tu sesión.
@@ -284,7 +284,7 @@ Al abrir la aplicación, ingresa tu nombre para comenzar tu sesión.
 
 ---
 
-## 📊 Criterios de Aprobación
+## Criterios de Aprobación
 
 | Modo | Preguntas | Para Aprobar | Errores Permitidos |
 |------|-----------|--------------|-------------------|
@@ -293,7 +293,7 @@ Al abrir la aplicación, ingresa tu nombre para comenzar tu sesión.
 
 ---
 
-## 💻 Instalación
+## Instalación
 
 ### Requisitos Previos
 - Un navegador moderno (Chrome, Firefox, Safari, Edge)
@@ -336,7 +336,7 @@ Luego visita `http://localhost:8000` en tu navegador.
 
 ---
 
-## 🔍 SEO y Redes Sociales
+## SEO y Redes Sociales
 
 ### Meta Tags Optimizados
 La aplicación incluye meta tags completos para SEO:
@@ -371,13 +371,13 @@ Incluye todas las rutas de la aplicación para indexación.
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 **Álvaro Neyra**
 
@@ -386,7 +386,7 @@ Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 
 ---
 
-## 🙏 Agradecimientos
+## Agradecimientos
 
 - **MTC Perú** por proporcionar el banco de preguntas oficiales
 - **Google Fonts** por las tipografías retro

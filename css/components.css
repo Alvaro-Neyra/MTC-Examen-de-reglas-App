@@ -1,0 +1,291 @@
+.btn {
+    font-family: var(--font-pixel);
+    font-size: 0.8rem;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.btn-primary {
+    background: linear-gradient(180deg, var(--color-neon-green) 0%, var(--color-neon-green-dim) 100%);
+    color: var(--color-black);
+    border: 3px solid var(--color-white);
+    box-shadow: var(--shadow-glow-green), inset 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--color-neon-green), 0 0 40px var(--color-neon-green);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+.btn-secondary {
+    background: linear-gradient(180deg, var(--color-neon-blue) 0%, #0099bb 100%);
+    color: var(--color-black);
+    border: 3px solid var(--color-white);
+    box-shadow: var(--shadow-glow-blue);
+}
+
+.btn-secondary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--color-neon-blue), 0 0 40px var(--color-neon-blue);
+}
+
+.btn-danger {
+    background: linear-gradient(180deg, var(--color-neon-red) 0%, #cc3333 100%);
+    color: var(--color-white);
+    border: 3px solid var(--color-white);
+    box-shadow: var(--shadow-glow-red);
+}
+
+.btn-danger:hover {
+    transform: scale(1.05);
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--color-neon-green);
+    border: 2px solid var(--color-neon-green);
+}
+
+.btn-ghost:hover {
+    background: rgba(0, 255, 65, 0.1);
+    box-shadow: var(--shadow-glow-green);
+}
+
+.btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.btn:disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.card {
+    background: var(--color-dark);
+    border: 3px solid var(--color-neon-green);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg, var(--color-neon-green), var(--color-neon-yellow), var(--color-neon-red), var(--color-neon-blue));
+    z-index: -1;
+    opacity: 0.3;
+    filter: blur(5px);
+}
+
+.card-title {
+    font-family: var(--font-pixel);
+    font-size: 1rem;
+    color: var(--color-neon-yellow);
+    margin-bottom: 1rem;
+    text-shadow: var(--shadow-glow-yellow);
+}
+
+.card-body {
+    font-family: var(--font-retro);
+    font-size: 1.3rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-label {
+    font-family: var(--font-pixel);
+    font-size: 0.7rem;
+    color: var(--color-neon-blue);
+    display: block;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.input-field {
+    width: 100%;
+    padding: 1rem;
+    font-family: var(--font-retro);
+    font-size: 1.5rem;
+    background: var(--color-black);
+    border: 3px solid var(--color-neon-blue);
+    color: var(--color-white);
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.input-field:focus {
+    border-color: var(--color-neon-green);
+    box-shadow: var(--shadow-glow-green);
+}
+
+.input-field::placeholder {
+    color: var(--color-gray);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: var(--color-black);
+    border: 2px solid var(--color-neon-blue);
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-neon-green), var(--color-neon-yellow));
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 100%
+    );
+    animation: progressShine 2s infinite;
+}
+
+@keyframes progressShine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.badge {
+    font-family: var(--font-pixel);
+    font-size: 0.6rem;
+    padding: 0.3rem 0.6rem;
+    border: 2px solid currentColor;
+    display: inline-block;
+}
+
+.badge-success {
+    color: var(--color-neon-green);
+    background: rgba(0, 255, 65, 0.1);
+}
+
+.badge-danger {
+    color: var(--color-neon-red);
+    background: rgba(255, 68, 68, 0.1);
+}
+
+.badge-warning {
+    color: var(--color-neon-orange);
+    background: rgba(255, 102, 0, 0.2);
+    border: 1px solid var(--color-neon-orange);
+}
+
+.badge-info {
+    color: var(--color-neon-blue);
+    background: rgba(0, 212, 255, 0.1);
+}
+
+.stat-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--color-dark);
+    border: 2px solid var(--color-neon-green);
+}
+
+.stat-value {
+    font-family: var(--font-pixel);
+    font-size: 2rem;
+    color: var(--color-neon-yellow);
+    text-shadow: var(--shadow-glow-yellow);
+}
+
+.stat-label {
+    font-family: var(--font-pixel);
+    font-size: 0.6rem;
+    color: var(--color-neon-blue);
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 768px) {
+    .grid-2, .grid-3, .grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.gap-1 { gap: 0.5rem; }
+.gap-2 { gap: 1rem; }
+.gap-3 { gap: 1.5rem; }
+.gap-4 { gap: 2rem; }
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.w-full { width: 100%; }
+.h-full { height: 100%; }

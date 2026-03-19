@@ -17,6 +17,12 @@ Desktop.ini
 .project
 .settings/
 
+# Agent and IDE config directories
+.agent/
+.agents/
+.claude/
+skills-lock.json
+
 # Logs
 *.log
 npm-debug.log*

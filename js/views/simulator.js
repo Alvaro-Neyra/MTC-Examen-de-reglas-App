@@ -13,6 +13,15 @@ let shuffledQuestions = [];
 let timerInterval = null;
 let timeRemaining = TIME_LIMIT;
 
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
 export async function renderSimulator(state) {
     const main = document.getElementById('main-content');
     
@@ -23,12 +32,12 @@ export async function renderSimulator(state) {
     } else {
         currentQuestion = 1;
         answers = [];
-        shuffledQuestions = [...questions].sort(() => Math.random() - 0.5).slice(0, TOTAL_QUESTIONS);
+        shuffledQuestions = shuffleArray(questions).slice(0, TOTAL_QUESTIONS);
         timeRemaining = TIME_LIMIT;
     }
     
     if (shuffledQuestions.length === 0) {
-        shuffledQuestions = [...questions].sort(() => Math.random() - 0.5).slice(0, TOTAL_QUESTIONS);
+        shuffledQuestions = shuffleArray(questions).slice(0, TOTAL_QUESTIONS);
     }
     
     const question = shuffledQuestions[currentQuestion - 1];

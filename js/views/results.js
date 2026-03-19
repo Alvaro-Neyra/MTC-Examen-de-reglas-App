@@ -143,10 +143,10 @@ export async function renderResults(attemptId) {
         </div>
     `;
 
-    setupResultsEvents(attempt);
+    setupResultsEvents(attempt, isSimulator);
 }
 
-function setupResultsEvents(attempt) {
+function setupResultsEvents(attempt, isSimulator) {
     const btnRetry = document.getElementById('btn-retry');
     const btnAttempts = document.getElementById('btn-attempts');
     const btnStats = document.getElementById('btn-stats');
@@ -154,16 +154,27 @@ function setupResultsEvents(attempt) {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const answersList = document.getElementById('answers-list');
 
-    btnRetry.addEventListener('click', () => {
-        if (isSimulator) {
-            navigate('simulator-intro');
-        } else {
-            navigate('exam');
-        }
-    });
-    btnAttempts.addEventListener('click', () => navigate('attempts'));
-    btnStats.addEventListener('click', () => navigate('stats'));
-    btnHome.addEventListener('click', () => navigate('home'));
+    if (btnRetry) {
+        btnRetry.addEventListener('click', () => {
+            if (isSimulator) {
+                navigate('simulator-intro');
+            } else {
+                navigate('intro');
+            }
+        });
+    }
+    
+    if (btnAttempts) {
+        btnAttempts.addEventListener('click', () => navigate('attempts'));
+    }
+    
+    if (btnStats) {
+        btnStats.addEventListener('click', () => navigate('stats'));
+    }
+    
+    if (btnHome) {
+        btnHome.addEventListener('click', () => navigate('home'));
+    }
 
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {

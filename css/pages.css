@@ -1359,6 +1359,34 @@
     font-family: var(--font-pixel);
     font-size: 0.8rem;
     color: var(--color-neon-yellow);
+    margin-top: 0.5rem;
+}
+
+.review-stats {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-gray);
+}
+
+.review-stat-item {
+    font-family: var(--font-pixel);
+    font-size: 0.6rem;
+}
+
+.review-stat-item .stat-correct {
+    color: var(--color-neon-green);
+}
+
+.review-stat-item .stat-wrong {
+    color: var(--color-neon-red);
+}
+
+.review-stat-item .stat-pending {
+    color: var(--color-white);
 }
 
 .review-container {

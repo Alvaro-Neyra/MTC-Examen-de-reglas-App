@@ -55,6 +55,17 @@ export async function renderReview() {
                     <span class="review-icon">💡</span>
                     <p>Estas son las preguntas que fallaste en tus últimos exámenes. ¡Practica para mejorar!</p>
                 </div>
+                <div class="review-stats">
+                    <span class="review-stat-item">
+                        <span class="stat-correct">✓ Correctas: <span id="review-correct">0</span></span>
+                    </span>
+                    <span class="review-stat-item">
+                        <span class="stat-wrong">✗ Incorrectas: <span id="review-incorrect">0</span></span>
+                    </span>
+                    <span class="review-stat-item">
+                        <span class="stat-pending">○ Pendientes: <span id="review-pending">${reviewQuestions.length}</span></span>
+                    </span>
+                </div>
                 <div class="review-progress-text">
                     <span id="review-current">1</span> / <span id="review-total">${reviewQuestions.length}</span>
                 </div>
@@ -73,7 +84,24 @@ export async function renderReview() {
 
     document.getElementById('btn-review-quit')?.addEventListener('click', handleQuitReview);
     
+    updateReviewStats();
+    
     await showReviewQuestion();
+}
+
+function updateReviewStats() {
+    const reviewQuestions = failedQuestionIds.map(id => questions.find(q => q.id === id)).filter(Boolean);
+    const correctCount = answers.filter(a => a.isCorrect).length;
+    const incorrectCount = answers.filter(a => a && !a.isCorrect).length;
+    const pendingCount = reviewQuestions.length - answers.length;
+    
+    const correctEl = document.getElementById('review-correct');
+    const incorrectEl = document.getElementById('review-incorrect');
+    const pendingEl = document.getElementById('review-pending');
+    
+    if (correctEl) correctEl.textContent = correctCount;
+    if (incorrectEl) incorrectEl.textContent = incorrectCount;
+    if (pendingEl) pendingEl.textContent = Math.max(0, pendingCount);
 }
 
 async function showReviewQuestion() {
@@ -193,6 +221,8 @@ function selectReviewAnswer(index) {
     if (questionCard) {
         questionCard.classList.add('answered');
     }
+    
+    updateReviewStats();
 }
 
 async function handleReviewNext() {

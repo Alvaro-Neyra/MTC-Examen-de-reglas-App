@@ -3,7 +3,7 @@ Allow: /
 Disallow: /api/
 
 # Sitemap
-Sitemap: https://mtc-exam-app.pages.dev/sitemap.xml
+Sitemap: https://mtc-examen-de-reglas-app.vercel.app/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

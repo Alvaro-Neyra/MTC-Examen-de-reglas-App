@@ -103,11 +103,11 @@ export function updateMetaTags(route) {
     if (metaKeywords) metaKeywords.setAttribute('content', meta.keywords);
     if (metaOgTitle) metaOgTitle.setAttribute('content', meta.ogTitle);
     if (metaOgDesc) metaOgDesc.setAttribute('content', meta.ogDescription);
-    if (metaOgImage) metaOgImage.setAttribute('content', `https://mtc-exam-app.pages.dev/${meta.ogImage}`);
+    if (metaOgImage) metaOgImage.setAttribute('content', `https://mtc-examen-de-reglas-app.vercel.app/${meta.ogImage}`);
     if (metaTwitterTitle) metaTwitterTitle.setAttribute('content', meta.ogTitle);
     if (metaTwitterDesc) metaTwitterDesc.setAttribute('content', meta.ogDescription);
-    if (metaTwitterImage) metaTwitterImage.setAttribute('content', `https://mtc-exam-app.pages.dev/${meta.ogImage}`);
-    if (canonical) canonical.setAttribute('href', `https://mtc-exam-app.pages.dev/#${route}`);
+    if (metaTwitterImage) metaTwitterImage.setAttribute('content', `https://mtc-examen-de-reglas-app.vercel.app/${meta.ogImage}`);
+    if (canonical) canonical.setAttribute('href', `https://mtc-examen-de-reglas-app.vercel.app/#${route}`);
     
     updateStructuredData(routeKey);
 }
